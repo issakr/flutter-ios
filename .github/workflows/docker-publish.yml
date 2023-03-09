@@ -6,20 +6,16 @@ name: Docker
 # documentation.
 
 on:
-  schedule:
-    - cron: "25 4 * * *"
   push:
     branches: ["master"]
     # Publish semver tags as releases.
     tags: ["v*.*.*"]
-  pull_request:
-    branches: ["master"]
 
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io #ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: skr112/flutter
+  IMAGE_NAME: skr112/flutter-ios
 
 jobs:
   build:
