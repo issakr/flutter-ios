@@ -1,7 +1,7 @@
 FROM skr112/flutter:master
 
 RUN apt update
-RUN ap install -y \
+RUN apt install -y \
     ruby-full build-essential
 
 RUN apt clean
